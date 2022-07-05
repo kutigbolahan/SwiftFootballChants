@@ -9,16 +9,20 @@
 /* Begin PBXBuildFile section */
 		002910F52873518200006B8F /* FootballChantsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002910F42873518200006B8F /* FootballChantsApp.swift */; };
 		002910F72873518200006B8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002910F62873518200006B8F /* ContentView.swift */; };
-		002910F92873518400006B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002910F82873518400006B8F /* Assets.xcassets */; };
 		002910FC2873518400006B8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002910FB2873518400006B8F /* Preview Assets.xcassets */; };
+		002911032874683200006B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002911022874683200006B8F /* Assets.xcassets */; };
+		002911052874691900006B8F /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 002911042874691900006B8F /* Resources */; };
+		0029110828746AB600006B8F /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029110728746AB600006B8F /* Team.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		002910F12873518200006B8F /* FootballChants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballChants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		002910F42873518200006B8F /* FootballChantsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballChantsApp.swift; sourceTree = "<group>"; };
 		002910F62873518200006B8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		002910F82873518400006B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		002910FB2873518400006B8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		002911022874683200006B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		002911042874691900006B8F /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		0029110728746AB600006B8F /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +55,11 @@
 		002910F32873518200006B8F /* FootballChants */ = {
 			isa = PBXGroup;
 			children = (
+				0029110628746A9B00006B8F /* Model */,
+				002911042874691900006B8F /* Resources */,
+				002911022874683200006B8F /* Assets.xcassets */,
 				002910F42873518200006B8F /* FootballChantsApp.swift */,
 				002910F62873518200006B8F /* ContentView.swift */,
-				002910F82873518400006B8F /* Assets.xcassets */,
 				002910FA2873518400006B8F /* Preview Content */,
 			);
 			path = FootballChants;
@@ -65,6 +71,14 @@
 				002910FB2873518400006B8F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0029110628746A9B00006B8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0029110728746AB600006B8F /* Team.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +139,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002911032874683200006B8F /* Assets.xcassets in Resources */,
 				002910FC2873518400006B8F /* Preview Assets.xcassets in Resources */,
-				002910F92873518400006B8F /* Assets.xcassets in Resources */,
+				002911052874691900006B8F /* Resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0029110828746AB600006B8F /* Team.swift in Sources */,
 				002910F72873518200006B8F /* ContentView.swift in Sources */,
 				002910F52873518200006B8F /* FootballChantsApp.swift in Sources */,
 			);
