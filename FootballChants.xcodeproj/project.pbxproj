@@ -57,6 +57,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0012869A288CB87900B8B6CE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0012869B288CB89400B8B6CE /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		002910E82873518200006B8F = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +90,8 @@
 		002910F32873518200006B8F /* FootballChants */ = {
 			isa = PBXGroup;
 			children = (
+				0012869B288CB89400B8B6CE /* New Group */,
+				0012869A288CB87900B8B6CE /* ViewModel */,
 				004E79532874BC7900046315 /* Resourcess */,
 				0029110628746A9B00006B8F /* Model */,
 				002910F42873518200006B8F /* FootballChantsApp.swift */,
