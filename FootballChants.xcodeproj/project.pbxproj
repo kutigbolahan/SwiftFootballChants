@@ -14,7 +14,7 @@
 		002911032874683200006B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002911022874683200006B8F /* Assets.xcassets */; };
 		0029110828746AB600006B8F /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029110728746AB600006B8F /* Team.swift */; };
 		0029110A28746D9B00006B8F /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029110928746D9B00006B8F /* Manager.swift */; };
-		0031811E288CCB9500FC5517 /* TeamCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0031811D288CCB9500FC5517 /* TeamCardView.swift */; };
+		00318121288CCDC400FC5517 /* TeamCardViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00318120288CCDC400FC5517 /* TeamCardViews.swift */; };
 		004E79522874BB8C00046315 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E79512874BB8C00046315 /* Teams.swift */; };
 		004E79562874BCCF00046315 /* arsenal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 004E79552874BCCF00046315 /* arsenal.mp3 */; };
 /* End PBXBuildFile section */
@@ -28,7 +28,7 @@
 		002911022874683200006B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0029110728746AB600006B8F /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		0029110928746D9B00006B8F /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
-		0031811D288CCB9500FC5517 /* TeamCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCardView.swift; sourceTree = "<group>"; };
+		00318120288CCDC400FC5517 /* TeamCardViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCardViews.swift; sourceTree = "<group>"; };
 		004E79512874BB8C00046315 /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
 		004E79552874BCCF00046315 /* arsenal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = arsenal.mp3; sourceTree = "<group>"; };
 		004E79572874BCE500046315 /* manchester_city.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = manchester_city.mp3; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		002910F32873518200006B8F /* FootballChants */ = {
 			isa = PBXGroup;
 			children = (
-				0031811C288CCB7D00FC5517 /* View */,
+				0031811F288CCDA300FC5517 /* Views */,
 				001286A1288CB9E100B8B6CE /* ViewModifier */,
 				0012869A288CB87900B8B6CE /* ViewModel */,
 				004E79532874BC7900046315 /* Resourcess */,
@@ -125,12 +125,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		0031811C288CCB7D00FC5517 /* View */ = {
+		0031811F288CCDA300FC5517 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0031811D288CCB9500FC5517 /* TeamCardView.swift */,
+				00318120288CCDC400FC5517 /* TeamCardViews.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		004E79532874BC7900046315 /* Resourcess */ = {
@@ -239,12 +239,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0029110828746AB600006B8F /* Team.swift in Sources */,
-				0031811E288CCB9500FC5517 /* TeamCardView.swift in Sources */,
 				004E79522874BB8C00046315 /* Teams.swift in Sources */,
 				001286A3288CBA0C00B8B6CE /* TeamCardViewModifier.swift in Sources */,
 				002910F72873518200006B8F /* ContentView.swift in Sources */,
 				002910F52873518200006B8F /* FootballChantsApp.swift in Sources */,
 				0029110A28746D9B00006B8F /* Manager.swift in Sources */,
+				00318121288CCDC400FC5517 /* TeamCardViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
