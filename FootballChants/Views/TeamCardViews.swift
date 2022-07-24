@@ -13,12 +13,16 @@ struct TeamCardView: View {
        
         VStack(alignment: .leading){
                 HStack(alignment: .top, spacing: 12){
-                    Image(team.id.badge).resizable().scaledToFit().frame(width: 50, height: 50)
+                    Image(team.id.badge).resizable().scaledToFit().frame(width: 50, height: 50).accessibility(label: Text("\(team.name) Badge"))
                     VStack(alignment: .leading, spacing: 5){
-                        Text(team.name).font(.system(size: 18,weight: .bold))
-                        Text("Founded: \(team.founded)").font(.system(size: 12,weight: .light))
-                        Text("Current \(team.manager.job.rawValue): \(team.manager.name)").font(.system(size: 10,weight: .light))
-                        Text(team.info).font(.system(size: 12,weight: .medium))
+                        Text(team.name).font(.system(size: 18,weight: .bold)).accessibility(label: Text("Team Name"))
+                            .accessibility(label: Text(team.name))
+                        Text("Founded: \(team.founded)").font(.system(size: 12,weight: .light)).accessibility(label: Text("Team Founded"))
+                            .accessibility(label: Text(team.founded))
+                        Text("Current \(team.manager.job.rawValue): \(team.manager.name)").font(.system(size: 10,weight: .light)).accessibility(label: Text("\(team.manager.job.rawValue)"))
+                            .accessibility(label: Text(team.manager.name))
+                        Text(team.info).font(.system(size: 12,weight: .medium)).accessibility(label: Text("Team Information"))
+                            .accessibility(label: Text(team.info))
                     }
                     Spacer()
                     Button(action: {}, label: {
