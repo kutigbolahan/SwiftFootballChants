@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    let team: Team
+    @ObservedObject var viewModel = TeamsViewModel()
     var body: some View {
       
-        List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-           
+        List {
+            ForEach(viewModel.teams){
+                team in  TeamCardView(team: team) { selectedTeam in
+                    print("Selected Team: \(selectedTeam)")
+                }
+            }
+      
         }
         
         
@@ -21,6 +26,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(team: Team.dummyData[0])
+        ContentView()
     }
 }

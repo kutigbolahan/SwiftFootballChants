@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		001286A3288CBA0C00B8B6CE /* TeamCardViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001286A2288CBA0C00B8B6CE /* TeamCardViewModifier.swift */; };
+		0016A5AD28A5528100ED65C5 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016A5AC28A5528100ED65C5 /* TeamViewModel.swift */; };
 		002910F52873518200006B8F /* FootballChantsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002910F42873518200006B8F /* FootballChantsApp.swift */; };
 		002910F72873518200006B8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002910F62873518200006B8F /* ContentView.swift */; };
 		002910FC2873518400006B8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002910FB2873518400006B8F /* Preview Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		001286A2288CBA0C00B8B6CE /* TeamCardViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCardViewModifier.swift; sourceTree = "<group>"; };
+		0016A5AC28A5528100ED65C5 /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
 		002910F12873518200006B8F /* FootballChants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballChants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		002910F42873518200006B8F /* FootballChantsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballChantsApp.swift; sourceTree = "<group>"; };
 		002910F62873518200006B8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		0012869A288CB87900B8B6CE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0016A5AC28A5528100ED65C5 /* TeamViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0029110828746AB600006B8F /* Team.swift in Sources */,
+				0016A5AD28A5528100ED65C5 /* TeamViewModel.swift in Sources */,
 				004E79522874BB8C00046315 /* Teams.swift in Sources */,
 				001286A3288CBA0C00B8B6CE /* TeamCardViewModifier.swift in Sources */,
 				002910F72873518200006B8F /* ContentView.swift in Sources */,

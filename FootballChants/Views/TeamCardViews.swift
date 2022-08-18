@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TeamCardView: View {
     let team: Team
+    typealias chantsPlayBackHandler = (_ team: Team) -> Void
+    var handler: chantsPlayBackHandler
     var body: some View {
        
         VStack(alignment: .leading){
@@ -25,10 +27,13 @@ struct TeamCardView: View {
                             .accessibility(label: Text(team.info))
                     }
                     Spacer()
-                    Button(action: {}, label: {
+                    Button(action: {
+                        handler(team)
+                    }, label: {
                         Image(systemName: "play.circle.fill").resizable().scaledToFit()
                     })
-                    .frame( maxWidth: 40,maxHeight: .infinity, alignment: .center)
+                    .frame( maxWidth: 40,maxHeight: .infinity, alignment: .center).accessibilityElement(children: .ignore)
+                    .accessibility(label: Text(team.isPlaying ? "Pause" : "Play"))
                 }
         }
         .applyTeamCardStyle(teamType: team.id)
@@ -39,8 +44,8 @@ struct TeamCardView: View {
 struct TeamCardView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            TeamCardView(team: Team.dummyData[0]).previewLayout(PreviewLayout.fixed(width: 400, height: 150)).padding().previewDisplayName("Dummy data 1: Team Card Preview")
-            TeamCardView(team: Team.dummyData[1 ]).previewLayout(PreviewLayout.fixed(width: 400, height: 150)).padding().previewDisplayName("Dummy data 2: Team Card Preview")
+            TeamCardView(team: Team.dummyData[0], handler: {_ in }).previewLayout(PreviewLayout.fixed(width: 400, height: 150)).padding().previewDisplayName("Dummy data 1: Team Card Preview")
+            TeamCardView(team: Team.dummyData[1 ], handler: {_ in}).previewLayout(PreviewLayout.fixed(width: 400, height: 150)).padding().previewDisplayName("Dummy data 2: Team Card Preview")
         }
     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Team {
+struct Team: Identifiable {
     
     let id: TeamType
     let name: String
@@ -15,6 +15,14 @@ struct Team {
     let manager: Manager
     let founded: String
     var isPlaying: Bool = false
+    
+    mutating func togglePlayBack(){
+        self.isPlaying.toggle()
+    }
+    
+    mutating func isPlayBack(state: Bool){
+        self.isPlaying = state
+    }
 }
 
 
