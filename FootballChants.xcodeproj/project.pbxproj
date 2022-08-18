@@ -18,6 +18,7 @@
 		00318121288CCDC400FC5517 /* TeamCardViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00318120288CCDC400FC5517 /* TeamCardViews.swift */; };
 		004E79522874BB8C00046315 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004E79512874BB8C00046315 /* Teams.swift */; };
 		004E79562874BCCF00046315 /* arsenal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 004E79552874BCCF00046315 /* arsenal.mp3 */; };
+		00CB36D628AE744900A974BB /* AudioManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CB36D528AE744900A974BB /* AudioManagerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		004E79652874BCE600046315 /* palace.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = palace.mp3; sourceTree = "<group>"; };
 		004E79662874BCE600046315 /* manchester_united.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = manchester_united.mp3; sourceTree = "<group>"; };
 		004E79672874BCE600046315 /* everton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = everton.mp3; sourceTree = "<group>"; };
+		00CB36D528AE744900A974BB /* AudioManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManagerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				0016A5AC28A5528100ED65C5 /* TeamViewModel.swift */,
+				00CB36D528AE744900A974BB /* AudioManagerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				0016A5AD28A5528100ED65C5 /* TeamViewModel.swift in Sources */,
 				004E79522874BB8C00046315 /* Teams.swift in Sources */,
 				001286A3288CBA0C00B8B6CE /* TeamCardViewModifier.swift in Sources */,
+				00CB36D628AE744900A974BB /* AudioManagerViewModel.swift in Sources */,
 				002910F72873518200006B8F /* ContentView.swift in Sources */,
 				002910F52873518200006B8F /* FootballChantsApp.swift in Sources */,
 				0029110A28746D9B00006B8F /* Manager.swift in Sources */,
