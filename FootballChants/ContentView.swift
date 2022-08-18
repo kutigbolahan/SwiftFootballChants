@@ -10,15 +10,16 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var viewModel = TeamsViewModel()
     var body: some View {
-      
-        List {
-            ForEach(viewModel.teams){
-                team in  TeamCardView(team: team) { selectedTeam in
-                    print("Selected Team: \(selectedTeam)")
+        ScrollView{
+            LazyVStack{
+                ForEach(viewModel.teams){
+                    team in  TeamCardView(team: team) { selectedTeam in
+                        viewModel.togglePlayBack(for: selectedTeam)
+                    }
                 }
             }
-      
         }
+       
         
         
     }

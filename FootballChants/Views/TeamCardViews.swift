@@ -30,7 +30,7 @@ struct TeamCardView: View {
                     Button(action: {
                         handler(team)
                     }, label: {
-                        Image(systemName: "play.circle.fill").resizable().scaledToFit()
+                        Image(systemName: team.isPlaying ? "pause.circle.fill": "play.circle.fill").resizable().scaledToFit()
                     })
                     .frame( maxWidth: 40,maxHeight: .infinity, alignment: .center).accessibilityElement(children: .ignore)
                     .accessibility(label: Text(team.isPlaying ? "Pause" : "Play"))
